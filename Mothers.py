@@ -1,0 +1,15 @@
+import pygame
+from time import sleep
+pygame.init()
+window = pygame.display.set_mode((0,0),pygame.FULLSCREEN)
+sleep(5)
+pygame.mixer.init()
+pygame.mixer.music.load('song.mp3')
+pygame.mixer.music.play()
+sleep(8)
+pygame.mixer.music.load('maa.mp3')
+pygame.mixer.music.play()
+image = pygame.image.load('image.png')
+window.blit(image,(650,100))
+pygame.display.update()
+sleep(13)
